@@ -1,0 +1,108 @@
+:root {
+  --accent-colour: #2196f3;
+  --normal-colour: #212121;
+  --backfone-colour: #757575;
+  --second-colour: #ffffff;
+  --backroud-dark: #2f303a;
+  --main-font: "Roboto", sans-serif;
+  --accent-font: "Raleway", sans-serif;
+}
+body {
+  background-color: var(--second-colour);
+  color: var(--normal-colour);
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+/*nav*/
+.logo-blue {
+  color: var(--accent-colour);
+  font-family: var(--accent-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.1923;
+  letter-spacing: 0.03em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo-black {
+  color: #000000;
+}
+.nav-links a {
+  color: var(--normal-colour);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--accent-colour);
+}
+/*kontacts*/
+.kont-links a {
+  color: var(--backfone-colour);
+  text-decoration: none;
+}
+.kont-links a:hover,
+.kont-links a:focus {
+  color: var(--accent-colour);
+}
+/*main*/
+.hero {
+  color: var(--second-colour);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/*button*/
+.button {
+  color: var(--second-colour);
+  background-color: var(--accent-colour);
+  padding: 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  border-width: unset;
+  border-style: none;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.section-dark {
+  background-color: var(--backroud-dark);
+}
+/*futures*/
+.features {
+  background-color: violet;
+  opacity: 0;
+}
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+}
+/*speshilight*/
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+}
+/*cards*/
+.list p {
+  color: var(--backfone-colour);
+  line-height: 1.71;
+  font-weight: normal;
+}
+.subtitle-name {
+  font-size: 16px;
+  line-height: 1.187;
+}
