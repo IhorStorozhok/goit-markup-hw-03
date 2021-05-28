@@ -4,8 +4,9 @@
   --backfone-colour: #757575;
   --second-colour: #ffffff;
   --backroud-dark: #2f303a;
-  --main-font: "Roboto", sans-serif;
-  --accent-font: "Raleway", sans-serif;
+  --filter-colour: #f5f4fa;
+  --main-font: 'Roboto', sans-serif;
+  --accent-font: 'Raleway', sans-serif;
 }
 body {
   background-color: var(--second-colour);
@@ -19,20 +20,26 @@ body {
 
 .list {
   list-style: none;
+  text-decoration: none;
 }
 /*nav*/
+
+/*logo*/
 .logo-blue {
   color: var(--accent-colour);
   font-family: var(--accent-font);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.1923;
   letter-spacing: 0.03em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo-black {
   color: #000000;
 }
+.logo-white {
+  color: var(--second-colour);
+}
+/*nav-links*/
 .nav-links a {
   color: var(--normal-colour);
   text-decoration: none;
@@ -42,16 +49,22 @@ body {
 .nav-links a:focus {
   color: var(--accent-colour);
 }
+.nav-links .current {
+  color: var(--accent-colour);
+}
+
 /*kontacts*/
 .kont-links a {
   color: var(--backfone-colour);
   text-decoration: none;
+  text-align: left;
+  font-style: normal;
 }
 .kont-links a:hover,
 .kont-links a:focus {
   color: var(--accent-colour);
 }
-/*main*/
+/*hero*/
 .hero {
   color: var(--second-colour);
   font-size: 44px;
@@ -59,6 +72,9 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.section-dark {
+  background-color: var(--backroud-dark);
 }
 /*button*/
 .button {
@@ -71,14 +87,17 @@ body {
   border-width: unset;
   border-style: none;
   font-size: 15px;
-  font-weight: bold;
+  font-family: inherit;
+  font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-.section-dark {
-  background-color: var(--backroud-dark);
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
 }
+
 /*futures*/
 .features {
   background-color: violet;
@@ -100,9 +119,58 @@ body {
 .list p {
   color: var(--backfone-colour);
   line-height: 1.71;
-  font-weight: normal;
+  font-weight: 400;
 }
 .subtitle-name {
   font-size: 16px;
   line-height: 1.187;
+}
+.normtext {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--second-colour);
+}
+
+.work-examples p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+/*footer*/
+.footer {
+  font-weight: 400;
+}
+
+/*portfolio*/
+.button-filter {
+  color: var(--normal-colour);
+  background-color: var(--filter-colour);
+  padding: 6px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  border-width: unset;
+  border-style: none;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.button-filter:hover {
+  color: var(--second-colour);
+  background-color: var(--accent-colour);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.work-examples a {
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--normal-colour);
+  text-decoration: none;
+}
+.item h3 {
+  font-size: 18px;
 }
