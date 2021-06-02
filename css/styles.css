@@ -22,8 +22,42 @@ body {
   list-style: none;
   text-decoration: none;
 }
-/*nav*/
 
+h1,
+h2,
+h3,
+p,
+.nav-links,
+.kont-links,
+.features-list {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px;
+}
+
+/*header*/
+.head-box {
+  display: flex;
+  align-items: center;
+}
+
+/*nav*/
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar p {
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
 /*logo*/
 .logo-blue {
   color: var(--accent-colour);
@@ -53,6 +87,13 @@ body {
   color: var(--accent-colour);
 }
 
+.nav-links {
+  display: flex;
+}
+
+.nav-links .item:not(:last-child) {
+  margin-right: 50px;
+}
 /*kontacts*/
 .kont-links a {
   color: var(--backfone-colour);
@@ -64,8 +105,28 @@ body {
 .kont-links a:focus {
   color: var(--accent-colour);
 }
+.kont-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.kont-links .item:not(:last-child) {
+  margin-right: 50px;
+}
 /*hero*/
+
+.action {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .hero {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+
   color: var(--second-colour);
   font-size: 44px;
   font-weight: 900;
@@ -78,11 +139,15 @@ body {
 }
 /*button*/
 .button {
-  color: var(--second-colour);
-  background-color: var(--accent-colour);
+  margin-top: 30px;
+  margin-bottom: 200px;
   padding: 10px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  color: var(--second-colour);
+  background-color: var(--accent-colour);
+
   text-decoration: none;
   border-width: unset;
   border-style: none;
@@ -98,11 +163,29 @@ body {
   background-color: #188ce8;
 }
 
+.section {
+  padding: 94px 15px;
+}
+
 /*futures*/
 .features {
   background-color: violet;
   opacity: 0;
+  font-size: 0;
 }
+
+.features-list {
+  display: flex;
+}
+
+.features-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list h3 {
+  margin-bottom: 10px;
+}
+
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
@@ -111,9 +194,20 @@ body {
 }
 /*speshilight*/
 .title {
+  text-align: center;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;
+}
+
+.unique-list {
+  margin: 0;
+  padding: 0;
+}
+
+.unique-list .picture {
+  display: block;
 }
 /*cards*/
 .list p {
@@ -121,6 +215,16 @@ body {
   line-height: 1.71;
   font-weight: 400;
 }
+
+.team-cards {
+  margin: 0;
+  padding: 0;
+}
+
+.team-cards .picture {
+  display: block;
+}
+
 .subtitle-name {
   font-size: 16px;
   line-height: 1.187;

@@ -10,63 +10,71 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <!--Шапка сайта-->
   <body>
     <header>
       <!--Навигация-->
-      <nav>
-        <p>
-          <a href="./index.html" class="list logo-blue"
-            >Web<span class="logo-black">studio</span></a
-          >
-        </p>
-        <ul class="nav-links list">
-          <li><a href="./index.html" class="current">Webstudio</a></li>
-          <li><a href="">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="container head-box">
+        <nav class="nav-bar">
+          <p>
+            <a href="./index.html" class="list logo-blue"
+              >Web<span class="logo-black">studio</span></a
+            >
+          </p>
+          <ul class="nav-links list">
+            <li class="item"><a href="">Студия</a></li>
+            <li class="item"><a href="./index.html" class="current">Webstudio</a></li>
+            <li class="item"><a href="./portfolio.html">Портфолио</a></li>
+            <li class="item"><a href="">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <!--Контакты-->
-      <ul class="kont-links list">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+        <!--Контакты-->
+        <ul class="kont-links list">
+          <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <!--Герой-->
       <section class="section-dark">
-        <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button">Заказать услугу</button>
+        <div class="action container">
+          <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button">Заказать услугу</button>
+        </div>
       </section>
 
       <!--Особенности-->
-      <section>
+      <section class="section container">
         <h2 class="features">Особенности</h2>
-        <ul class="list">
-          <li>
+        <ul class="list features-list">
+          <li class="item">
             <h3 class="subtitle">Внимание к деталям</h3>
             <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
 
-          <li>
+          <li class="item">
             <h3 class="subtitle">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
 
-          <li>
+          <li class="item">
             <h3 class="subtitle">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
 
-          <li>
+          <li class="item">
             <h3 class="subtitle">Современные технологии</h3>
             <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
@@ -74,11 +82,12 @@
       </section>
 
       <!--Специализация-->
-      <section>
+      <section class="section">
         <h2 class="title">Чем мы занимаемся</h2>
-        <ul class="list">
+        <ul class="list unique-list">
           <li>
             <img
+              class="picture"
               src="./images/img1.jpg"
               width="370"
               height="294"
@@ -87,6 +96,7 @@
           </li>
           <li>
             <img
+              class="picture"
               src="./images/img2.jpg"
               width="370"
               height="294"
@@ -95,6 +105,7 @@
           </li>
           <li>
             <img
+              class="picture"
               src="./images/img3.jpg"
               width="370"
               height="294"
@@ -107,9 +118,10 @@
       <!--Карточки команды-->
       <section>
         <h2 class="title">Наша команда</h2>
-        <ul class="list">
+        <ul class="list team-cards">
           <li>
             <img
+              class="picture"
               src="./images/person1.jpg"
               width="270"
               height="260"
@@ -120,19 +132,37 @@
           </li>
 
           <li>
-            <img src="./images/person2.jpg" width="270" height="260" alt="Фото Олиги Репиной" />
+            <img
+              class="picture"
+              src="./images/person2.jpg"
+              width="270"
+              height="260"
+              alt="Фото Олиги Репиной"
+            />
             <h3 class="subtitle-name">Ольга Репина</h3>
             <p>Frontend Developer</p>
           </li>
 
           <li>
-            <img src="./images/person3.jpg" width="270" height="260" alt="Фото Николая Тарасова " />
+            <img
+              class="picture"
+              src="./images/person3.jpg"
+              width="270"
+              height="260"
+              alt="Фото Николая Тарасова "
+            />
             <h3 class="subtitle-name">Николай Тарасов</h3>
             <p>Marketing</p>
           </li>
 
           <li>
-            <img src="./images/person4.jpg" width="270" height="260" alt="Фото Михаила Ермакова" />
+            <img
+              class="picture"
+              src="./images/person4.jpg"
+              width="270"
+              height="260"
+              alt="Фото Михаила Ермакова"
+            />
             <h3 class="subtitle-name">Михаил Ермаков</h3>
             <p>UI Designer</p>
           </li>
