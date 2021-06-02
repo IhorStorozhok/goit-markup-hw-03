@@ -22,7 +22,9 @@ body {
   list-style: none;
   text-decoration: none;
 }
-
+* {
+  outline: 2px solid tomato;
+}
 h1,
 h2,
 h3,
@@ -164,7 +166,11 @@ p,
 }
 
 .section {
-  padding: 94px 15px;
+  padding: 94px 15px 94px 15px;
+}
+
+.section-features {
+  padding: 94px 15px 0px 15px;
 }
 
 /*futures*/
@@ -204,10 +210,24 @@ p,
 .unique-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  margin-top: 50px;
 }
 
 .unique-list .picture {
   display: block;
+}
+
+/*.item-unique {
+  margin-right: 30px;
+  flex-basis: calc(100% / 3);
+}
+.examples-img {
+  margin-right: -30px;
+}*/
+
+.item-unique:not(:last-child) {
+  margin-right: 30px;
 }
 /*cards*/
 .list p {
@@ -219,6 +239,16 @@ p,
 .team-cards {
   margin: 0;
   padding: 0;
+  display: flex;
+  margin-top: 50px;
+}
+
+.personal-cards {
+  align-items: center;
+}
+
+.personal-cards:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-cards .picture {
@@ -228,7 +258,13 @@ p,
 .subtitle-name {
   font-size: 16px;
   line-height: 1.187;
+  text-align: center;
 }
+
+.position {
+  text-align: center;
+}
+
 .normtext {
   font-style: normal;
   font-weight: 400;
@@ -275,6 +311,6 @@ p,
   color: var(--normal-colour);
   text-decoration: none;
 }
-.item h3 {
+.item-portfolio {
   font-size: 18px;
 }
