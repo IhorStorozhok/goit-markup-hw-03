@@ -345,11 +345,8 @@ p,
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/*.button-box {
+.button-box:not(:last-child) {
   margin-right: 8px;
-}*/
-.button-box:last-child {
-  margin-right: 156px;
 }
 
 /*hero os portfolio*/
@@ -358,9 +355,11 @@ p,
   letter-spacing: 0.06em;
   color: var(--normal-colour);
   text-decoration: none;
+  display: block;
 }
-.item-portfolio > .sub-heading {
+.item-portfolio .sub-heading {
   font-size: 18px;
+  margin-bottom: 4px;
 }
 
 .goods-cards {
@@ -376,6 +375,6 @@ p,
   margin-right: 30px;
   margin-bottom: 30px;
 }
-* {
-  outline: 2px solid salmon;
+.card-textbox {
+  padding: 20px 24px;
 }
