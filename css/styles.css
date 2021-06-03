@@ -21,6 +21,7 @@ body {
 .list {
   list-style: none;
   text-decoration: none;
+  padding-left: 0;
 }
 
 * h1,
@@ -315,6 +316,13 @@ p,
 }
 
 /*portfolio*/
+
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .button-filter {
   color: var(--normal-colour);
   background-color: var(--filter-colour);
@@ -337,12 +345,37 @@ p,
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/*.button-box {
+  margin-right: 8px;
+}*/
+.button-box:last-child {
+  margin-right: 156px;
+}
+
+/*hero os portfolio*/
 .work-examples a {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--normal-colour);
   text-decoration: none;
 }
-.item-portfolio {
+.item-portfolio > .sub-heading {
   font-size: 18px;
+}
+
+.goods-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: left;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.cards-box {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+* {
+  outline: 2px solid salmon;
 }
