@@ -46,6 +46,9 @@ p,
 .head-box {
   display: flex;
   align-items: center;
+}
+
+.header-line {
   border-bottom: #ececec solid 1px;
 }
 
@@ -235,6 +238,10 @@ p,
   font-weight: 400;
 }
 
+.section-grey {
+  background-color: var(--filter-colour);
+}
+
 .team-cards {
   margin: 0;
   padding: 0;
@@ -377,4 +384,9 @@ p,
 }
 .card-textbox {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+
+.picture {
+  display: block;
 }
