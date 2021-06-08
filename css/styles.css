@@ -118,6 +118,23 @@ p,
 .kont-links .item:not(:last-child) {
   margin-right: 50px;
 }
+
+.kont-links .item {
+  text-align: center;
+}
+.item .icon {
+  width: 16px;
+  height: 12px;
+}
+.item .icon {
+  margin-right: 10px;
+}
+
+.item .icon-phone {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
 /*hero*/
 
 .action {
@@ -141,6 +158,15 @@ p,
 }
 .section-dark {
   background-color: var(--backroud-dark);
+}
+.back-image {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0)),
+    url(..//images/bgrimg.jpg);
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*button*/
 .button {
@@ -199,6 +225,16 @@ p,
   font-weight: bold;
   font-size: 14px;
   line-height: 1.142;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+.icon-thumb {
+  padding: 25px 100px;
+  background-color: var(--filter-colour);
+  margin-bottom: 30px;
 }
 /*speshilight*/
 .title {
